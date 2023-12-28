@@ -45,8 +45,6 @@ pub async fn stop(state: State<'_, App>) -> Result<(), ()> {
     }
     let tx = ch.as_ref().unwrap().clone();
     let _ = tx.send("stop".into()).await;
-
-    println!("send stop");
     Ok(())
 }
 

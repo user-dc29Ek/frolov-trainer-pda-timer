@@ -1,6 +1,6 @@
 [package]
-name = "pda-counter"
-version = "0.0.0"
+name = "pda-timer"
+version = "1.0.1"
 description = "Таймер для упражнений с тренажером Фролова."
 authors = ["you"]
 license = ""
