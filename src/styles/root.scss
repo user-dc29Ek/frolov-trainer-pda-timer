@@ -1,0 +1,16 @@
+.yc-root {
+    --yc-font-family-sans: "Roboto";
+    --g-scrollbar-width: 12px;
+}
+.g-root {
+    --g-scrollbar-width: 12px;
+}
+
+
+
+html, body, #root {
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+}

@@ -1,0 +1,39 @@
+@use '@/styles/variables';
+@use '@gravity-ui/uikit/styles/mixins';
+
+$block: '.#{variables.$ns}sess-tmr';
+
+
+#{$block}{
+    box-sizing: border-box;
+    grid-area: sess-counter;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    align-self: center;
+
+    &__counter {
+        @include mixins.text-display-2();
+        padding: 46px 0px;
+   }
+
+   &__toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 36px;
+    width: 100%;
+    max-width: 210px;
+   }
+   &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+}

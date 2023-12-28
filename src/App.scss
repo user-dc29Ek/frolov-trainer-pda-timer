@@ -1,0 +1,24 @@
+@use '@/styles/variables';
+// @use './variables' as vars;
+
+$block: '.#{variables.$ns}mwnd';
+
+
+#{$block}{
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 42px;
+  grid-template-areas:
+  "settings sess-counter"
+  "pda-counter pda-counter";
+  height: 100vh;
+  width: 100vw;
+  padding: 36px;
+
+  &__pda-counter {
+    grid-area: pda-counter;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "pda-counter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@bem-react/classname": "^1.6.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@gravity-ui/components": "^2.10.0",
+    "@gravity-ui/icons": "^2.8.1",
+    "@gravity-ui/uikit": "^5.26.0",
+    "@tauri-apps/cli": "^1.5.8",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.0.2",
+    "url": "^0.11.3",
+    "vite": "^5.0.0"
+  }
+}
