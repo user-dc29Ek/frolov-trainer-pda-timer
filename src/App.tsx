@@ -98,7 +98,7 @@ function reducer(state: Config, action: ActionT): Config {
         pda: payload as number,
       };
     case CfgFields.SessDuration:
-      if ((payload as number) < 2) return state;
+      if ((payload as number) < 1) return state;
       return {
         ...state,
         session_duration: payload as number,
@@ -143,7 +143,19 @@ function App() {
         });
       });
     };
+    const runFinishedListener = async () => {
+      await listen("finished", (event) => {
+        const c: DisplayCounterMsg = event.payload as DisplayCounterMsg;
+        setState({
+          session: c.session,
+          pda_display: c.pda_display,
+          pda: c.pda,
+        });
+        setAppMode(AppModes.Stopped);
+      });
+    };
     runListener();
+    runFinishedListener();
   }, []);
 
   const handleStartClick = async (_event: React.MouseEvent<HTMLElement>) => {

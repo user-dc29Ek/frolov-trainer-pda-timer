@@ -57,7 +57,7 @@ pub async fn run_counter(
         i = i + 1;
     }
     let _ = app.emit_all(
-        "counter_tick",
+        "finished",
         DisplayCounterMsg {
             session: "00:00".into(),
             pda_display: "00".into(),
