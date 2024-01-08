@@ -1,7 +1,18 @@
-# Tauri + React + Typescript
+# Таймер ПДА
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Таймер Продолжительности Дыхательного Акта (ПДА) для занятий на дыхательном тренажере Фролова.
 
-## Recommended IDE Setup
+![](screenshot/screen1.png)
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+# О дыхательном тренажере Фролова
+
+- [https://lotos-frolov.ru/vse-o-trenzhere](https://lotos-frolov.ru/vse-o-trenzhere)
+- [https://www.breathing.ru/index.html](https://www.breathing.ru/index.html)
+
+# Поддерживаемые операционные системы
+
+- Windows
+- Linux
+- MacOS (ARM)
+
+
