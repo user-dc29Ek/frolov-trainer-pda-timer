@@ -13,6 +13,6 @@
 
 - Windows
 - Linux
-- MacOS (ARM)
+- MacOS
 
 
