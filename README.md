@@ -15,4 +15,10 @@
 - Linux
 - MacOS
 
-В MacOS после установки приложения нужно в терминале выполнить команду `xattr -r -d com.apple.quarantine /Applications/pda-timer.app`. В противном случае MacOS не даст запустить приложение.
+В MacOS после установки приложения нужно в терминале выполнить команду 
+
+```shell
+xattr -r -d com.apple.quarantine /Applications/pda-timer.app
+```
+
+В противном случае MacOS не даст запустить приложение.
